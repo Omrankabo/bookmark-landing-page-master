@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    box-sizing: border-box;
+}
+:root{
+    
+    font-family:'Rubik', sans-serif;
+    --primary-blue:hsl(231, 69%, 60%);
+    --primary-red: hsl(0, 94%, 66%);
+    --ne-blue:hsl(229, 8%, 60%);
+    --ne-dark-blue:hsl(229, 31%, 21%);
+    --fsize:18px;
+    --fw1: 400;
+    --fw2:500;
+
+}
+body{
+    overflow-x: hidden;
+}
+/* -----------NAV-------------- */
+.mobile-nav{
+    display: none;
+}
+nav{
+    padding: 2rem 5rem;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 45%;
+    padding-right: 6rem;
+}
+.link{
+    color: var(--ne-dark-blue);
+    font-weight: var(--fw1);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.link:hover{
+    color: var(--primary-red);
+}
+.log{
+    background: var(--primary-red);
+    padding: .5rem 1.5rem;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 2px solid var(--primary-red);
+    transition: .3s;
+}
+.log:hover{
+    color: var(--primary-red);
+    background: transparent;
+    transition: .3s;
+}
+/* ---------------------------------------hero--------------------- */
+main{
+    padding: 2rem 5rem;
+}
+.main-container{
+    display: flex;
+    min-height: calc(100vh - 6.5rem);
+    max-height: fit-content;
+
+}
+.hero-text{
+    padding: 3.5rem 0;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.hero-text h1{
+    font-weight: var(--fw2);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--ne-dark-blue);
+}
+
+.hero-text p {
+    max-width: 550px;
+    line-height: 26px;
+    margin-bottom: 1.5rem;
+    font-size: var(--fsize);
+    color: var(--ne-blue);
+}
+.hero-btns button{
+    padding: .8rem 1.5rem;
+    color: var(--ne-blue);
+    font-weight: var(--fw2);
+    background: rgb(253, 253, 253);
+    box-shadow: 0 3px 5px  rgba(0, 0, 0, 0.26);
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(253, 253, 253) ;
+    cursor: pointer;
+    transition: .3s linear;
+    
+}
+.hero-btns button:nth-child(1){
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: rgb(253, 253, 253);
+    margin-right: 1rem;
+}
+.hero-btns button:nth-child(1):hover{
+    background: rgb(253, 253, 253);
+    color: var(--primary-blue);
+    transition: .3s linear;
+}
+.hero-btns button:nth-child(2):hover{
+    border-color: var(--ne-blue);
+    transition: .3s linear;
+}
+.hero-img{
+    position: relative;
+}
+.bg{
+    position: absolute;
+    bottom: 15%;
+    right: -12%;
+    height: 20rem;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    background: var(--primary-blue);
+    width: 33rem;
+    z-index: -999;
+}
+/* -----------features-------------- */
+.features{
+    max-height: fit-content;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+.features h1{
+    text-align: center;
+    font-size: 28px;
+    color: var(--ne-dark-blue);
+    margin-bottom: 1rem;
+}
+.features p{
+    text-align: center;
+    max-width: 500px;
+    margin: 0% auto;
+    color: var(--ne-blue);
+    line-height: 20px;
+    margin-bottom: 2.5rem;
+}
+.tab-btn{
+    width: 60%;
+    margin: 0% auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.tabBTN{
+    color: var(--ne-blue);
+    background: transparent;
+    text-transform: capitalize;
+    padding: 1rem 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: var(--fsize);
+    cursor: pointer;
+    transition: .3s linear;
+}
+.tabBTN:hover{
+    color: var(--primary-red);
+    transition: .3s linear;
+}
+.active{
+    color: var(--ne-dark-blue);
+    border-bottom: 3px solid var(--primary-red);
+}
+.tab-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab-img{
+    position: relative;
+}
+.tab-img .bg{
+    left: -15%;
+    width: 35rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0 ;
+    border-top-right-radius: 10rem ;
+    border-bottom-right-radius: 10rem;
+    bottom: -13%;
+}
+.tab-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tab-text h1{
+    text-align: start;
+}
+.tab-text p{
+    text-align: start;
+}
+.more-info{
+    width: 7rem;
+    padding: .8rem 0;
+    color: white;
+    background: var(--primary-blue);
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    border: 2px solid var(--primary-blue);
+    cursor: pointer;
+    transition: .3s linear;
+}
+.more-info:hover{
+    color: var(--primary-blue);
+    background: transparent;
+    transition: .3s linear;
+}
+/* download section --------------*/
+.download{
+    /* height: 100vh; */
+    max-height: fit-content;
+
+}
+.download h1{
+    text-align: center;
+    color: var(--ne-dark-blue);
+    padding: 1rem 0;
+}
+.download p {
+    color: var(--ne-blue);
+    text-align: center;
+    max-width: 500px;
+    margin: 0% auto;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0%;
+    margin:1rem 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    width: 19rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.138);
+    border-radius: 10px;
+}
+.card:nth-child(2){
+    transform: translateY(46px);
+}
+
+.card:nth-child(3){
+    transform: translateY(86px);
+}
+.card img{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.card h2 {
+    margin: 1rem 0%;
+}
+.card p {
+    margin-bottom: 2rem;
+}
+.card button{
+    width: 80%;
+    border-radius: 6px;
+    color: white;
+    background: var(--primary-blue);
+    border: none;
+    border: 2px solid var(--primary-blue);
+    padding: 1rem;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.card button:hover{
+    color: var(--primary-blue);
+    background: transparent;
+    transition: .3s linear;
+}
+
+/* questions section */
+
+.questions{
+    margin: 3rem 0%;
+    height: 100vh;
+    max-height: fit-content;
+}
+.questions h1{
+    color: var(--ne-dark-blue);
+    text-align: center;
+    padding: 1rem 0%;
+}
+.questions p{
+    max-width: 500px;
+    text-align: center;
+    margin: 0% auto;
+    color: var(--ne-blue);
+    line-height: 20px;
+}
+.question-container{
+    margin: 3rem 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.single-question{
+    width: 650px;
+    text-align: start;
+    border-top: 1px solid var(--ne-blue) ;
+}
+.single-question h1{
+    font-weight: 400;
+}
+.close{
+    transform: rotateX(180deg);
+}
+.q{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+.answer{
+    width: 100%;
+}
+.answer p {
+    max-width: 650px !important;
+    text-align: start;
+    margin: 0%;
+    padding-bottom: 1.5rem;
+}
+.quBtn{
+    display: flex;
+    justify-content: center;
+}
+.stayUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--primary-blue);
+    color: white;
+    padding: 3rem 0% ;
+}
+.stayUp h4{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.stayUp h1{
+    width: 500px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+form{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email{
+    position: relative;
+    display: flex;
+    width: 80%;
+}
+#email {
+    width: 100%;
+    padding: .6rem .5rem;
+    border-radius: 6px;
+    border: none;
+}
+.email img{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+.contact{
+    color: white;
+    padding: .6rem .5rem;
+    border-radius: 6px;
+    background: var(--primary-red);
+    border: none;
+    border: 2px solid var(--primary-red);
+    transition: .3s linear;
+    cursor: pointer;
+}
+.contact:hover{
+    color: var(--primary-red);
+    background: rgb(253, 253, 253);
+    transition: .3s linear;
+}
+/* footer */
+.footer-container{
+    display: flex;
+    background: var(--ne-dark-blue);
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.footer-text ul li {
+    padding: 0% 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+.scoial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    cursor: pointer;
+}
+/* mobile */
+@media screen and (max-width:420px) {
+    nav{
+        padding: 2.5rem;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobile-nav{
+        display: block;
+        object-fit: cover;
+        width: 1.6rem;
+        height: 1.6rem;
+        cursor: pointer;
+    }
+    .nav-list{
+        display: none;
+    }
+    /* main */
+    main{
+        padding: 2.5rem;
+    }
+    .main-container{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .hero-img{
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heImg{
+        max-width: 375px;
+        object-fit: cover;
+    }
+    .bg{
+        right: -19%;
+        bottom: -5%;
+        height: 222px;
+        width: 80%;
+    }
+    .hero-text h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .hero-text p {
+        text-align: center;
+    }
+    .hero-btns button:nth-child(1){
+        margin: 0%;
+    }
+    .hero-btns button{
+        padding: .8rem 1.2rem;
+    }
+    .hero-btns{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /* features---------- */
+    .features{
+        margin-top: 0;
+    }
+    .tab-btn{
+        width: 100%;
+        flex-direction: column;
+        border: none;
+    }
+    .tabBTN{
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+        padding: 1.5rem 0%;
+    }
+    .tabBTN:nth-child(1){
+        border-top: 1px solid rgba(0, 0, 0, 0.26);
+    }
+    /* it's bettter to use divs then what i'm doing right now */
+    .active::after{
+        position: absolute;
+        content: '';
+        width: 8rem;
+        height: 3px ;
+        background: var(--primary-red);
+        bottom: 0%;
+        left: 30%;
+    }
+    .tab-container{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .tab-img{
+        width: 375px;
+        margin: 0% auto;
+    }
+    .tabImage{
+        width: 320px;
+    }
+    .tab-img .bg{
+        left: -25%;
+        width: 23rem;
+    }
+    .tab-text{
+        padding-top: 4rem;
+    }
+    
+    .card-container{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .card:nth-child(2){
+        transform: translate(0,0);
+    }
+    .card:nth-child(3){
+        transform: translate(0,0);
+    }
+    .card{
+        margin-top: 2rem;
+    }
+    .questions {
+        margin-bottom: 0;
+    }
+    .questions h1{
+        font-size: 28px;
+    }
+    .single-question{
+        max-width: 80vw;
+    }
+    .q{
+        max-width: 355px;
+    }
+    .q h1{
+        font-size: 22px;
+    }
+    .stayUp h1{
+        font-size: 26px;
+        max-width: 355px;
+    }
+    form{
+        max-width: 355px;
+        flex-direction: column;
+    }
+    #email{
+        margin-bottom: 1rem;
+    }
+    .contact{
+        width: 80%;
+    }
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-text{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-text ul{
+        flex-direction: column;
+    }
+    .footer-text ul li {
+        margin: .8rem 0 ;
+    }
+    .scoial{
+        width: 25%;
+    }
+}
