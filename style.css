@@ -70,6 +70,7 @@ nav{
 /* ---------------------------------------hero--------------------- */
 main{
     padding: 2rem 5rem;
+    overflow-x: hidden;
 }
 .main-container{
     display: flex;
@@ -483,6 +484,9 @@ form{
         justify-content: space-between;
         width: 100%;
     }
+    .logo{
+        object-fit: contain;
+    }
     .mobile-nav{
         display: block;
         object-fit: cover;
@@ -661,7 +665,8 @@ form{
         max-width: 355px;
     }
     .q h1{
-        font-size: 22px;
+        font-size: 18px;
+        text-align: start;
     }
     .stayUp h1{
         font-size: 26px;
