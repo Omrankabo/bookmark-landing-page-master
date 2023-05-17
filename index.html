@@ -15,10 +15,10 @@
     <div class="container">
       <div class="nav-container">
         <img src="images/logo-bookmark.svg" alt="logo-bookmark" class="logo">
-
-        <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="mobile-nav">
+        <ion-icon name="menu-outline" class="mobile-nav"></ion-icon>
       </div>
       <ul class="nav-list">
+        <button class="closeBtn"><ion-icon name="close-outline"></ion-icon></button>
         <li class="link">Features</li>
         <li class="link">Pricing</li>
         <li class="link">Contact</li>
@@ -54,9 +54,9 @@
       </p>
       <!-- tab buttons -->
       <div class="tab-btn">
-        <button class="tabBTN active"> Simple Bookmarking</button>
-        <button class="tabBTN">Speedy Searching</button>
-        <button class="tabBTN">Easy Sharing</button>
+        <button class="tabBTN active tab1"> Simple Bookmarking</button>
+        <button class="tabBTN tab2">Speedy Searching</button>
+        <button class="tabBTN tab3">Easy Sharing</button>
       </div>
       <!-- tab -->
       <div class="tab-container">
@@ -135,7 +135,7 @@
     <div class="single-question">
       <div class="q">
         <h1> What is Bookmark?</h1>
-        <img src="images/icon-arrow.svg" alt="arrow" class="open close">
+        <ion-icon name="chevron-down-outline" class="open close"></ion-icon>
         
       </div>
       <div class="answer">
@@ -149,8 +149,9 @@
     <!-- single questions ends -->
     <div class="single-question">
       <div class="q">
-        <h1> How can I request a new browser?</h1>
-        <img src="images/icon-arrow.svg" alt="arrow" class="open">
+        <h1> How can I request a new browser?</h1>      
+        <ion-icon name="chevron-down-outline" class="open "></ion-icon>
+
       </div>
       <div class="answer">
         <p>
@@ -158,6 +159,34 @@
           Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
           ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
           Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+        </p>
+      </div>
+    </div>
+    <!-- single questions ends -->
+    <div class="single-question">
+      <div class="q">
+        <h1> is there a mobile app?</h1>      
+        <ion-icon name="chevron-down-outline" class="open "></ion-icon>
+
+      </div>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel molestias fugit voluptas facilis placeat esse consequuntur laborum exercitationem perferendis dolorum vero tempore, officia reiciendis veritatis laboriosam. Inventore hic quo eligendi sapiente fugit natus voluptatem saepe mollitia autem nemo repellendus ex, sint cum quasi suscipit.
+
+        </p>
+      </div>
+    </div>
+    <!-- single questions ends -->
+    <div class="single-question">
+      <div class="q">
+        <h1> what about other chromium browsers?</h1>      
+        <ion-icon name="chevron-down-outline" class="open "></ion-icon>
+
+      </div>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex et nam sed quidem, culpa excepturi laborum necessitatibus, recusandae harum eveniet blanditiis animi praesentium pariatur dignissimos vero inventore delectus numquam dolores sapiente quos exercitationem.
 
         </p>
       </div>
@@ -180,7 +209,7 @@
       <form class="stay-container">
         <div class="email">
           <input type="email" required  id="email" placeholder="Email">
-          <img src="images/icon-error.svg" alt="">
+          <ion-icon name="alert-circle" class="alert"></ion-icon>
         </div>
         <button class="contact" type="submit">Contact us</button>
       </form>
@@ -197,10 +226,13 @@
         </ul>
       </div>
       <div class="scoial">
-        <img src="images/icon-facebook.svg" alt="facebook">
-        <img src="images/icon-twitter.svg" alt="twitter">
+        <ion-icon name="logo-facebook" class="scoBtn"></ion-icon>
+        <ion-icon name="logo-twitter" class="scoBtn"></ion-icon>
       </div>
     </div>
   </footer>
+  <script src="app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
